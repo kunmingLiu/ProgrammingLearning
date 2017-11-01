@@ -13,7 +13,7 @@ return [3, 4].
 ------------------------------------------------
 Note :
 
-1.利用Binary Search的方式，先找找看中間的那個是不是等於target; 如果中間的值剛好等於target，但是中間值的左右半間可能也都是等於target，因此還是需要針對左右半邊再進行Binary Search。
+1.利用Binary Search的方式，先找找看中間的那個是不是等於target; 如果中間的值剛好等於target，但是中間值的左右邊可能也都是等於target，因此還是需要針對左右半邊再進行Binary Search。
 
 2.若發現target是大於middle值的，那只需要針對middle的右半邊進行Binary Search。
 

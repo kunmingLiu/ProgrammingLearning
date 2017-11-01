@@ -13,6 +13,9 @@ public class Mobile implements Cloneable{
     private int color;//顏色
     private int version;//版本
 
+    private Mobile(){
+    
+    }
     public int getOs() {
         return os;
     }

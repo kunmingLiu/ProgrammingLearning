@@ -89,4 +89,17 @@ public class LRUCache {
             return node.val;
         }
     }
+    class Node {
+        private int key;
+        private int val;
+        private Node prev;
+        private Node next;
+
+        Node(int key , int val) {
+            this.val = val;
+            this.key = key;
+            prev = null;
+            next = null;
+        }
+    }
 }

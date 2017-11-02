@@ -31,7 +31,7 @@ cache.get(4);       // returns 4
 ---------------------------------------------------
 Note : 
 
-version1.(MySolution)
+version1.
 
 1.一開始想到用Single LinkedList來完成，因為這樣當有新的資料的話，就把它加在List的最後面;而當空間不夠的時候，則就先將head移除。
 
@@ -45,7 +45,7 @@ problems :
 
 ---------------------------------------------------
 
-version2.(MySolution2)
+version2.(MySolution)
 
 1.改成用douly Linked List來實作，並增加tail。那當要增加新元素或更動舊元素位置的時候，就可以直接加在tail的前面，不需要一個一個從頭掃。
 
@@ -55,7 +55,7 @@ problems :
 
 ---------------------------------------------------
 
-version3.(MySolution3)
+version3.(MySolution2)
 
 1.看了leetcode討論區的作法，就是多使用一個hashmap來當cache;hashmap裡面會記錄key跟node，當增加了新node，則就put進hashmap中，而當空間滿了要移除元素，
 則同時將該元素從移除hashmap移除。

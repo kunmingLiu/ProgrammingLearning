@@ -49,14 +49,16 @@ Functions that use pointers or references to base classes must be able to use ob
     }
 ###### 高層模塊與低層模塊都去依賴抽象(Juice)，那就只需要寫一個method，而不同種的果汁都可以共用
     public abstract class Juice {
-        abstract String getFruit();
-        abstract int getPrice();
+        public abstract String getFruit();
+        public abstract int getPrice();
     }
     //BananaJuice同樣也extends Juice
     public class AppleJuice extends Juice{
+        @Override
         public String getFruit(){
             return "Apple";
         }
+        @Override
         public int getPrice(){
             return 50;
         }
@@ -77,15 +79,15 @@ Functions that use pointers or references to base classes must be able to use ob
         void swim();
     }
     public class Tiger implements animal{
-        @override
+        @Override
         public void run(){
             //do somethig
         }
-        @override
+        @Override
         public void fly(){
             //nothing
         }
-        @override
+        @Override
         public void swim(){
             //nothing
         }        

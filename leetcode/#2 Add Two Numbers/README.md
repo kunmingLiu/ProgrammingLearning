@@ -58,8 +58,8 @@ Output: 7 -> 0 -> 8
     
 ##### 2.因為一開始head是null，因此必須在while中寫進if else來判斷現在head是不是null，但是每次迴圈都要判斷一次，以效率來說是不好的;因此，改成在一開始就先new好，只是最後要return的時候，不是是return head，而是return head.next。
     ListNode dummy = new ListNode(0), pre = dummy;
-    ......
-    return dummy.next;
+    ......
+    return dummy.next;
 
 ##### 3.個位數＋個位數不可能發生進位值>1的情況，因此若最後一位有發生進位的時候，其實就直接new ListNode(1)就好了，不用再做％。
     if (sum != 0)

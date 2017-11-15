@@ -31,7 +31,7 @@ Your code should preferably run in O(n) time and use only O(1) memory.
     }
 
 #### 3.如果B節點的值當作key去hashMap找，若get的值是null，那就代表這個節點不在Ａ中;若get的值不是null，那就代表這節點是在A當中，那這個節點，也就是這題目要尋找的交集點。
-    while(tempB != null){
+    while(tempB != null){
         if(hashmap.get(tempB.val) != null){
         return tempB;
     }

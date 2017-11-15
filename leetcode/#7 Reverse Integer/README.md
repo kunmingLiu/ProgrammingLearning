@@ -32,7 +32,7 @@ Assume we are dealing with an environment which could only hold integers within 
         for (int i = chars.length - 1; i >= 1 ; i--) {
         
         }
-    }
+    }
     
 #### 3.將字元陣列從最後面一個一個取出來後，轉成數字;但是轉成數字後，並需要乘上10^x (如果是個位數，則就乘上10^1;如果是十位數，則就乘上10^1)。
 ###### 最大的次方數就是字串長度-1(如123，會發現最高位數是百位，那最大的次方就是10^(3-1));每次算完一個位數後，就要將radix/10。

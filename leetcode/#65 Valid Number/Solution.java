@@ -1,16 +1,9 @@
 class Solution {
-    public int hammingDistance(int x, int y) {
-        int xor = x ^ y, count = 0;
-        while (xor != 0) {
-            xor &= (xor - 1);
-            count++;
+    public boolean isNumber(String s) {
+        String number = s.trim();
+        if(number.matches("^[+-]?((\\d*[.]((\\d+[e][+-]?\\d+$)|(\\d+$)))|(\\d+(([.]?[e][+-]?\\d+$)|([.]?\\d*))))")){
+            return true;
         }
-        return count;
-    }
-}
-----------------------------------------------
-class Solution {
-    public int hammingDistance(int x, int y) {
-        return Integer.bitCount(x^y);
+        return false;
     }
 }

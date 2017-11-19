@@ -1,16 +1,10 @@
 class Solution {
-    public int hammingDistance(int x, int y) {
-        int xor = x ^ y, count = 0;
-        while (xor != 0) {
-            xor &= (xor - 1);
-            count++;
+    public int singleNumber(int[] nums) {
+        int length = nums.length;
+        int singleNumber = 0;
+        for(int i = 0 ; i < length ; i++){
+            singleNumber = singleNumber ^ nums[i];
         }
-        return count;
-    }
-}
-----------------------------------------------
-class Solution {
-    public int hammingDistance(int x, int y) {
-        return Integer.bitCount(x^y);
+        return singleNumber;
     }
 }

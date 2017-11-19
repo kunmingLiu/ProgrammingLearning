@@ -1,16 +1,23 @@
 class Solution {
-    public int hammingDistance(int x, int y) {
-        int xor = x ^ y, count = 0;
-        while (xor != 0) {
-            xor &= (xor - 1);
-            count++;
+    public int majorityElement(int[] nums) {
+        Arrays.sort(nums);
+        int length = nums.length;
+        int majority = length / 2 +1;
+        int count = 1;
+        int value = nums[0];
+        
+        for(int i = 1 ; i < length ; i++){
+            if(value == nums[i]){
+                count++;
+                if(count == majority){
+                    return value;
+                }
+            }
+            else{
+                value = nums[i];
+                count = 1;
+            }
         }
-        return count;
-    }
-}
-----------------------------------------------
-class Solution {
-    public int hammingDistance(int x, int y) {
-        return Integer.bitCount(x^y);
+        return value;
     }
 }

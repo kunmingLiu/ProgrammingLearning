@@ -1,11 +1,14 @@
 # 簡單工廠(Simple Factory or Static Factory)
 
-### 1.定義一個工廠，傳入不同的參數取得不同的類別物件。
-### 2.隱藏物件的創建過程，使用者只需要指導自己需要什麼就好，不需要知道要如何創建。
+### 1.定義一個工廠，傳入不同的參數取得不同的產品。
+### 2.隱藏產品的創建過程，使用者只需要知道自己需要什麼產品就好，不需要知道要如何創建。
 
 ## 問題
 ### 1.未來要增加新產品時，需要修改factory的程式碼，這違反了開閉原則。
 --------------------------------------
+![imgage](https://github.com/kunmingLiu/MyPicture/blob/master/simple%20factory.png)
+參考圖片來源：http://www.oodesign.com/factory-pattern.html
+
 ##### 以果汁來做例子
 ###### 果汁的抽象類別
     public abstract class Juice {

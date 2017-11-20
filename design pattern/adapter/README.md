@@ -35,3 +35,8 @@
 ###### 1.讓Adapter去實作Target介面，那Adapter與Target就相容了。
 ###### 2.讓Adapter去依賴Adaptee，而在Target介面的method中去使用Adaptee的method。
 ###### 3.客戶等於是透過Adapter去使用本來的Adaptee。
+
+----------------------------------
+## 參考網站
+
+https://dotblogs.com.tw/pin0513/2010/05/30/15497

@@ -6,6 +6,9 @@
 ## 問題
 ### 1.未來要增加新產品時，需要修改factory的程式碼，這違反了開閉原則。
 --------------------------------------
+![imgage](https://github.com/kunmingLiu/MyPicture/blob/master/simple%20factory.png)
+圖片來源：http://www.oodesign.com/factory-pattern.html
+
 ##### 以果汁來做例子
 ###### 果汁的抽象類別
     public abstract class Juice {

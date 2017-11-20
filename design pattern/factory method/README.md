@@ -43,39 +43,39 @@
     }
 
 ###### 果汁工廠的抽象類別
-  public abstract class Juice {
-      public abstract String getName();
-      public abstract int getPrice();
-  }
+    public abstract class Juice {
+        public abstract String getName();
+        public abstract int getPrice();
+    }
 
 ###### 負責生產AppleJuice的工廠
-  public class AppleJuiceFactory extends JuiceFactory {
-      @Override
-      public Juice getJuice() {
-          return new AppleJuice();
-      }
-  }
+    public class AppleJuiceFactory extends JuiceFactory {
+        @Override
+        public Juice getJuice() {
+            return new AppleJuice();
+        }
+    }
 
 ###### 負責生產OrangeJuice的工廠
-  public class OrangeJuiceFactory extends JuiceFactory {
-      @Override
-      public Juice getJuice() {
-          return new OrangeJuice();
-      }
-  }
+    public class OrangeJuiceFactory extends JuiceFactory {
+        @Override
+        public Juice getJuice() {
+            return new OrangeJuice();
+        }
+    }
 
 ###### 用法
-  JuiceFactory factory = null;
+    JuiceFactory factory = null;
 
-  factory = new AppleJuiceFactory();
-  Juice appleJuice = factory.getJuice();
+    factory = new AppleJuiceFactory();
+    Juice appleJuice = factory.getJuice();
 
-  factory = new OrangeJuiceFactory();
-  Juice orangeJuice = factory.getJuice();
+    factory = new OrangeJuiceFactory();
+    Juice orangeJuice = factory.getJuice();
 
-###### 增加新產品KiwiJuice(不會影響到其他工廠的運行)
-  factory = new KiwiJuiceFactory();
-  Juice kiwiJuice = factory.getJuice();          
+###### 增加新產品KiwiJuice(不會影響到其他工廠的運行，遵守了開閉原則)
+    factory = new KiwiJuiceFactory();
+    Juice kiwiJuice = factory.getJuice();          
 
     
 ------------------------------------

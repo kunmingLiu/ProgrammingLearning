@@ -17,7 +17,7 @@
             System.out.print("電鍋設定"+minute+"分鐘，開始煮飯");
         }
         public void addSource(int source){
-            System.out.print("添加滷汁"+source);
+            System.out.print("添加滷汁"+source);
         }
     }
     //若method呼叫的順序不對，那就不能吃到好吃的飯了。
@@ -25,7 +25,7 @@
     cookRice.steam(30);
     cookRice.wash(1000);
     cookRice.addSource(1);
-    //另外，如果飯煮好了，應該就只能呼叫addSource()，而不能再呼叫steam()跟wash()
+    //另外，如果飯煮好了，應該就只能呼叫addSource()，而不能再呼叫steam()跟wash()
    
 ###### 使用Builder Pattern
     public class CookRice {

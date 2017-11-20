@@ -55,6 +55,10 @@
         }
     }
 
+###### 用法
+    Juice appleJuice = JuiceFactory.getJuice(JuiceFactory.APPLE_JUICE);
+    Juice orangeJuice = JuiceFactory.getJuice(JuiceFactory.ORANGE_JUICE);
+
     
 ------------------------------------
 ##  參考網站

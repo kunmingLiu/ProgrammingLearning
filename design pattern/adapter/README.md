@@ -6,6 +6,10 @@
 當目前的介面與Target的介面不相容時。
 
 -------------------------------------------------------
+![image](https://github.com/kunmingLiu/MyPicture/blob/master/adapter.png)
+參考圖片來源 : https://en.wikipedia.org/wiki/Adapter_pattern
+
+
 #### Target的介面
     public interface Target  {
         void request();
@@ -36,6 +40,21 @@
 ###### 2.讓Adapter去依賴Adaptee，而在Target介面的method中去使用Adaptee的method。
 ###### 3.客戶等於是透過Adapter去使用本來的Adaptee。
 
+#### 也可以讓Adapter不是依賴Adaptee，而是使用繼承
+    public class Adapter1 extends Adaptee implements Target {
+        @Override
+        public void request() {
+            this.sendRequest();
+        }
+    }
+
+#### 用法
+    Adapter adapter = new Adapter(new Adaptee());
+    adapter.request();
+
+    Adapter1 adapter1 = new Adapter1();
+    adapter1.request();
+###### 1.Adapter本身依賴Adaptee，因此需要在constructor中傳入Adaptee
 ----------------------------------
 ## 參考網站
 

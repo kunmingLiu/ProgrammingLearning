@@ -22,7 +22,7 @@ Minimize the total number of operations.
             swapIndex++;
         }
     }
-###### nums = [0, 1, 0, 3, 12]
+###### ex. nums = [0, 1, 0, 3, 12]
 
     i = 0 => 因為nums[0] == 0，所以不作任何處理。
     

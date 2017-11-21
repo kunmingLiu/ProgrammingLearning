@@ -1,18 +1,13 @@
-Link : https://leetcode.com/problems/hamming-distance/description/
+Link : https://leetcode.com/problems/move-zeroes/description/
 
-The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
+Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
-Given two integers x and y, calculate the Hamming distance.
+For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].
 
 Note:
-0 ≤ x, y < 2^31.
 
-Example:
-![image](https://github.com/kunmingLiu/MyPicture/blob/master/hamming_distance.PNG)
+You must do this in-place without making a copy of the array.
 
+Minimize the total number of operations.
 
-The above arrows point to positions where the corresponding bits are different.
-
--------------------------------------------------------------
-Note :
-
+--------------------------------------

@@ -3,7 +3,7 @@
 動態地將責任加諸於物件上，若要擴充功能，裝飾者提供了比繼承更有彈性的選擇！
 
 -------------------------------------------------------
-![image](https://github.com/kunmingLiu/MyPicture/blob/master/factory%20method.png)
+![image](https://github.com/kunmingLiu/MyPicture/blob/master/decorator.png)
 參考圖片來源 : https://en.wikipedia.org/wiki/Decorator_pattern
 
 ### 以手搖杯店的奶茶當作例子。可以單獨地賣奶茶本身，當然也可以選擇添加配料，只是若添加不同種的配料，價格與成分上就會有所差異。

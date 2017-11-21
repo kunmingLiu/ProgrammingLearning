@@ -6,12 +6,14 @@
 當物件本身就是一種樹形結構
 
 -------------------------------------------------------
-![image](https://github.com/kunmingLiu/MyPicture/blob/master/decorator.png)
+![image](https://github.com/kunmingLiu/MyPicture/blob/master/composite.png)
 參考圖片來源 : https://en.wikipedia.org/wiki/Composite_pattern
 
 ### 以百貨公司的衣服DM來當作例子，DM架構如下圖。
+![image](https://github.com/kunmingLiu/MyPicture/blob/master/composite_example.png)
 
-###### 由上圖可以知道子項也有可能是個選單，而選單再往下衍生出其他品項
+###### 黑色代表選單;棕色代表品項。
+###### 由上圖可以知道子項也有可能是個選單，而選單再往下衍生出其他品項。
 ###### 組合模式中最重要的關鍵就是要把選單跟品項視為是同一類(抽象)，這樣使用者使用的時候才不需要考慮目前處理的這個倒底是選單還是品項。
 
 #### AbstractMenu的抽象
@@ -27,6 +29,10 @@
         public abstract AbstractMenu getChild(int index);
         public abstract void print();
     }
+###### 若是將add()、remove()、getChild()移出抽象類別中，而是寫進選單的類別中，這樣之後當要使用到這三個method時，需要轉型。
+    Component menu = new Menu();
+    ((Menu)menu).add();
+###### 若是將add()、remove()、getChild()保留在抽象類別中，雖然之後不需要轉型，但是品項的類別雖然用不到這三個方法，但還是得去實做。
 
 #### 選單的類(當中會宣告一個集合去記錄自己下面的品項)
     public class Menu extends AbstractMenu {

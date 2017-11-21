@@ -1,18 +1,11 @@
-Link : https://leetcode.com/problems/hamming-distance/description/
+Link : https://leetcode.com/problems/shortest-palindrome/description/
 
-The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
+Given a string S, you are allowed to convert it to a palindrome by adding characters in front of it. Find and return the shortest palindrome you can find by performing this transformation.
 
-Given two integers x and y, calculate the Hamming distance.
+For example:
 
-Note:
-0 ≤ x, y < 2^31.
+Given "aacecaaa", return "aaacecaaa".
 
-Example:
-![image](https://github.com/kunmingLiu/MyPicture/blob/master/hamming_distance.PNG)
+Given "abcd", return "dcbabcd".
 
-
-The above arrows point to positions where the corresponding bits are different.
-
--------------------------------------------------------------
-Note :
-
+---------------------

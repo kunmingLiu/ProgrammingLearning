@@ -1,18 +1,9 @@
-Link : https://leetcode.com/problems/hamming-distance/description/
+Link : https://leetcode.com/problems/reverse-string/description/
 
-The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
-
-Given two integers x and y, calculate the Hamming distance.
-
-Note:
-0 ≤ x, y < 2^31.
+Write a function that takes a string as input and returns the string reversed.
 
 Example:
-![image](https://github.com/kunmingLiu/MyPicture/blob/master/hamming_distance.PNG)
 
+Given s = "hello", return "olleh".
 
-The above arrows point to positions where the corresponding bits are different.
-
--------------------------------------------------------------
-Note :
-
+--------------------------------

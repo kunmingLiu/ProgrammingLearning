@@ -4,7 +4,7 @@ Write a program to find the node at which the intersection of two singly linked 
 
 For example, the following two linked lists:
 
-A: a1 → a2 → c1 → c2 → c3
+A:      a1 → a2 → c1 → c2 → c3
 
 B: b1 → b2 → b3 → c1 → c2 → c3
 
@@ -39,3 +39,31 @@ Your code should preferably run in O(n) time and use only O(1) memory.
     }    
 
 ---------------------------------
+## Better Solution
+#### 1.以題目來看，會發生交集的部分，一定是某一點到最後一個點;因此如果有其中一個List比較長的話，前面幾個節點都忽略掉，要在個數相同的時候，才進行比較。
+
+#### 2.為了要知道哪個List比較長，因此要先知道兩個List的個數。
+    while(headA != null) {
+        l1++;
+        headA = headA.next;
+    }
+    while(headB!=null) {
+        l2++;
+        headB = headB.next;
+    }
+
+#### 3.長的那一方，必須要忽略掉多出來的那幾個節點。
+    int d = l2 > l1? l2-l1 : l1-l2;
+    for (int i = 0; i < d; i++) d1 = d1.next;
+
+#### 4.之後就開始針對兩個List進行比較，一直比到有相等的節點出現。
+    while (d1 != d2) {
+        d1 = d1.next;
+        d2 = d2.next;
+    }
+    
+
+
+
+
+

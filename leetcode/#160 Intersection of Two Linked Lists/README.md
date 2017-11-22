@@ -24,7 +24,7 @@ Your code should preferably run in O(n) time and use only O(1) memory.
 ## My Solution
 #### 1.因為不知道兩個List何時會有交集，如果是一般的做法，可能也是用兩層Loop讓兩個List中的節點一一比對;但是這樣的時間複雜度就是o(n^2)。
 
-#### 2.如果要產生交集的話，那就代表B當中有某個節點會出現在A中。因此，這便使用了HashMap先將A每個節點記錄下來，那這樣在檢查B的節點時候，就非常方便的知道B節點是否有出現在A當中。
+#### 2.如果要產生交集的話，那就代表B當中有某個節點會出現在A中。因此，這邊使用了HashMap先將A每個節點記錄下來，那這樣在檢查B的節點時候，就非常方便的知道B節點是否有出現在A當中。
     while(tempA != null){
         hashmap.put(tempA.val , tempA);
         tempA = tempA.next;

@@ -19,7 +19,7 @@ Try to do this in one pass.
     while(tempNode != null){
         ++count
     }
-   int index = count - n + 1; //n是倒數第幾個的
+    int index = count - n + 1; //n是倒數第幾個的
 
 #### 3.但是題目特別要求說希望是one pass，因此我的作法是在第一次算個數的時候，順便將每個ListNode跟index都存進一個HashMap中，這樣之後確定要刪除第幾個元素後，再把index當作key去hashMap取得該元素的前一個跟下一個，這樣就可以完成刪除的動作。
     while(tempNode != null){

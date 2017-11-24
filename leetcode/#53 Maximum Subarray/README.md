@@ -24,3 +24,7 @@ the contiguous subarray [4,-1,2,1] has the largest sum = 6.
     
 -------------------------------------
 ## Better Solution
+#### 1.如果發現前一個和小於0的話，則直接忽略此值，因為若小於0的話，也只會越加越小而已。
+    int curr = nums[i - 1] + (prev > 0 ? prev : 0);
+
+  

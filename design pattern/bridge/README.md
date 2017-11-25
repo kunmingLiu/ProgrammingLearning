@@ -52,15 +52,14 @@
 
 
 ###### 貝果的類
-    public abstract class Bread {
-        protected Jam jam = null;
-    
-        public Bread(Jam jam) {
-            this.jam = jam;
+    public Bagel extends Bread {
+        public Bagel(Jam jam) {
+            super(jam);
         }
-        public abstract String getBread();
-        public String getFullName(){
-            return jam.getJam()+getBread();
+    
+        @Override
+        public String getBread() {
+            return "貝果";
         }
     }
 

@@ -59,8 +59,8 @@
     
         @Override
         public String getBread() {
-            return "貝果";
-        }
+            return "貝果";
+        }
     }
 
 ###### 吐司的類

@@ -43,9 +43,8 @@
     }
 
 ###### 果汁工廠的抽象類別
-    public abstract class Juice {
-        public abstract String getName();
-        public abstract int getPrice();
+    public abstract class JuiceFactory {
+        public abstract Juice getJuice();
     }
 
 ###### 負責生產AppleJuice的工廠
